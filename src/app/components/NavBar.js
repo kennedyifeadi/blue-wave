@@ -9,36 +9,40 @@ import maleProfile from "../images/male profile 2.jpg"
 export const Navbar = () => {
   return (
     <div className="h-[10%] flex w-full ">
-      <div className="flex items-center px-4  justify-between w-full h-full ">
+      <div className="flex items-center md:px-4 px-2  justify-between w-full h-full ">
         <div className="flex items-center w-[70%] gap-3 justify-between h-full">
           <div className="flex items-center text-black font-bold text-lg">
             <div className="rounded-full bg-blue-200 p-2 text-white">
               <MdOutlineAnalytics size={24} />
             </div>
-            <span className="ml-2">BlueWave</span>
+            <span className="ml-2 text-[15px] md:text-[24px]">BlueWave</span>
           </div>
 
           {/* Navigation Links */}
           <div className="flex bg-[#0a0a0a] w-[100%] items-center justify-between p-1 h-[70%] pr-3 rounded-full">
-            <button className="text-black bg-[#e0f265] w-[18%] text-[12px] h-full justify-center rounded-full font-semibold flex items-center">
+            <button className="text-black bg-[#e0f265] w-max p-2 md:p-0 md:w-[18%] text-[12px] h-full justify-center rounded-full font-semibold flex items-center">
               <MdOutlineAnalytics className="mr-1" />
-              Analysis
+              <span className="hidden md:flex">Analysis</span>
             </button>
-            <button className="text-white text-[15px] w-[18%]  h-full rounded-full justify-center font-thin flex items-center">
+            <button className="text-white text-[15px] w-max p-2 md:p-0 md:w-[18%]  h-full rounded-full justify-center font-thin flex items-center">
               <MdOutlineDashboard className="mr-1" />
-              Market
+              <span className="hidden md:flex">Market</span>
+              
             </button>
-            <button className="text-white text-[15px] w-[18%]  h-full rounded-full justify-center font-thin flex items-center">
+            <button className="text-white text-[15px] w-max p-2 md:p-0 md:w-[18%]  h-full rounded-full justify-center font-thin flex items-center">
               <MdOutlineTableChart className="mr-1" />
-              Monitoring
+              <span className="hidden md:flex">Monitoring</span>
+              
             </button>
-            <button className="text-white text-[15px] w-[18%]  h-full rounded-full justify-center font-thin flex items-center">
+            <button className="text-white text-[15px] w-max p-2 md:p-0 md:w-[18%]  h-full rounded-full justify-center font-thin flex items-center">
             <GiFishingNet className="mr-1"  />
-              Fish Farm
+            <span className="hidden md:flex">Fish Farm</span>
+              
             </button>
-            <button className="text-white text-[15px] w-[18%]  h-full rounded-full justify-center font-thin flex items-center">
+            <button className="text-white text-[15px] w-max p-2 md:p-0 md:w-[18%]  h-full rounded-full justify-center font-thin flex items-center">
             <MdOutlineManageSearch className="mr-1"  />
-              Management
+            <span className="hidden md:flex">Management</span>
+              
             </button>
           </div>
         </div>

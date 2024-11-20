@@ -10,12 +10,14 @@ import {
   import { IoWatch } from "react-icons/io5";
   import { HiMiniSquares2X2 } from "react-icons/hi2";
   import { RiTeamFill } from "react-icons/ri";
+  import { IoMenu } from "react-icons/io5";
 
 
 
   
 export const Sidebar = () => {
     return (
+      <div className='w-max h-max md:relative absolute  right-3 top-[5px]'>
       <div className="md:flex hidden flex-col bg-gray-50 w-60 h-full rounded-lg p-4">
         <div className='flex text-[15px] w-full py-2 justify-between px-2 text-white font-bold rounded-full mb-2 bg-[#171717] items-center'><span>Menu</span> <HiMiniSquares2X2 />
         </div>
@@ -83,7 +85,11 @@ export const Sidebar = () => {
           </button>
         </div>
       </div>
+      <div className='flex md:hidden text-[24px] rounded-full bg-[#0a0a0a] text-white p-2 '>
+      <IoMenu />
+      </div>
+      </div>
     );
   };
   
-  
+   
