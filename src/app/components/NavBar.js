@@ -43,7 +43,7 @@ export const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex items-center w-[25%] justify-between pl-4 h-full ">
+        <div className="hidden md:flex items-center w-[25%] justify-between pl-4 h-full ">
           <CiSearch className="text-black bg-white rounded-full w-8 h-8 p-2" size={20} />
           <MdOutlineWbSunny className="text-black bg-white rounded-full w-8 h-8 p-2" size={20} />
           <FaRegBell className="text-black bg-white rounded-full w-8 h-8 p-2" size={20} />

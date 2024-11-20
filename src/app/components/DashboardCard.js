@@ -3,7 +3,7 @@ import { RxArrowTopRight } from "react-icons/rx";
 
 export const DashboardCard = ({ title, value, status, icon, text, color }) => {
     return (
-        <div className={` w-[48%] p-4 rounded-md ${color === "dark" ? "bg-[#0a0a0a]" : "glassM"}`}>
+        <div className={` w-full md:w-[48%] p-6 md:p-4 rounded-md ${color === "dark" ? "bg-[#0a0a0a]" : "glassM"}`}>
             <div className="text-sm w-full justify-between text-black flex font-bold  gap-1 items-center">
                 <div className="flex gap-2 items-center">
                 <span className={`${color === "dark" ? "bg-[#ecf89d] text-black" : "bg-[#ecf89d] text-black"} rounded-full w-8 h-8 flex justify-center items-center `}>{icon}</span> 
