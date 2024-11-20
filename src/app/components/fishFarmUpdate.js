@@ -1,4 +1,4 @@
-import React from 'react';
+"use client"
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, Tooltip, Legend } from 'chart.js';
 
@@ -54,12 +54,12 @@ const FishFarmUpdate = () => {
   };
 
   return (
-    <div className="bg-black/60 backdrop-blur-md rounded-lg p-4 shadow-md w-full max-w-lg mx-auto">
+    <div className="bg-[#0a0a0a] backdrop-blur-md rounded-lg flex justify-between flex-col p-4 h-full shadow-md w-full max-w-lg mx-auto">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-lg font-semibold text-gray-300">Fish Farm Update</h2>
-        <div className="flex space-x-4 text-sm text-gray-400">
-          <span>Farm - 8462A1</span>
-          <span>Monthly</span>
+        <h2 className="text-[12px] font-semibold text-gray-300">Fish Farm Update</h2>
+        <div className="flex text-[10px] gap-2 text-gray-400">
+          <span className='bg-[#2e2e2e] py-[2px] px-2 rounded-full'>Farm - 8462A1</span>
+          <span className='bg-[#2e2e2e] py-[2px] px-2 rounded-full'>Monthly</span>
         </div>
       </div>
       <div className="text-xs flex space-x-4 mb-4 text-gray-400">
