@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         background: "var(--background)",
+        dashboardBg: '#EAF4FC',
         foreground: "var(--foreground)",
       },
     },
