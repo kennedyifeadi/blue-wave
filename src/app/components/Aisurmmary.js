@@ -2,7 +2,7 @@
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { useEffect, useState } from 'react';
-import { lineChartData } from '../data/Soildata';
+import { lineChartData } from '../data/waterData';
 
 export const AiInference = () => {
   const [response, setResponse] = useState("");
@@ -16,13 +16,17 @@ export const AiInference = () => {
   const labelTwo = lineChartData.datasets[1].label;
   const dataThree = [...lineChartData.datasets[2].data];
   const labelThree = lineChartData.datasets[2].label;
+  const datafour = [...lineChartData.datasets[3].data];
+  const labelfour = lineChartData.datasets[3].label;
+  const datafive = [...lineChartData.datasets[4].data];
+  const labelfive = lineChartData.datasets[4].label;
 
   const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
   const fetchData = async () => {
     try {
       const model = genAI.getGenerativeModel({ model: "gemini-pro" });
-      const prompt = `Analyze the following soil health data for the past week, consisting of temperature (°C), humidity (%), and soil moisture (%). Provide a brief, actionable summary of the trends and their impact on soil health based on the data: ${labelOne} ${dataOne} ${labelTwo} ${dataTwo} ${labelThree} ${dataThree}, Give a short summary (3-4 sentences) highlighting the overall soil health and recommendations for irrigation or soil care. dont bold the title or text`
+      const prompt = `Analyze the following water health data for the past week, consisting of turbidity, temperature (°C), TDS (%), ammonia(NH3), PH. Provide a brief, actionable summary of the trends and their impact on soil health based on the data: ${labelOne} ${dataOne} ${labelTwo} ${dataTwo} ${labelThree} ${dataThree} ${labelfour} ${datafour} ${labelfive} ${datafive}, Give a short summary (3-4 sentences) highlighting the overall soil health and recommendations for irrigation or soil care. dont bold the title or text`
       const result = await model.generateContent(prompt);
       await sleep(1000);
       setIsLoading(false)
@@ -41,7 +45,7 @@ export const AiInference = () => {
   }, []);
 
   return (
-    <div className="mt-5 w-[95%] flex flex-col rounded-lg px-4 pb-4 items-center bg-white h-[300px]">
+    <div className="w-full h-[48%] flex flex-col rounded-lg px-4 pb-4 items-center bg-white">
       <div className="flex justify-between w-full h-[20%] items-center">
         <h1 className="font-semibold">AI Summary</h1>
         <DotLottieReact

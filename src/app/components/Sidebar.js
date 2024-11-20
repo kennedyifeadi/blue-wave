@@ -79,7 +79,7 @@ export const Sidebar = () => {
         {/* Import Data Button */}
         <div className="mt-2">
           <button className="bg-blue-500 text-white text-[12px] w-full py-2 rounded hover:bg-blue-600">
-            Import Data
+            Export Data
           </button>
         </div>
       </div>

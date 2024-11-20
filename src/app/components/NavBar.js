@@ -1,10 +1,10 @@
 import { FaRegBell, FaCog } from "react-icons/fa";
 import { MdOutlineWbSunny } from "react-icons/md";
-import { HiOutlineUserCircle } from "react-icons/hi";
 import { MdOutlineAnalytics, MdOutlineTableChart, MdOutlineDashboard } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
 import { MdOutlineManageSearch } from "react-icons/md";
 import { GiFishingNet } from "react-icons/gi";
+import maleProfile from "../images/male profile 2.jpg"
 
 export const Navbar = () => {
   return (
@@ -47,8 +47,9 @@ export const Navbar = () => {
           <CiSearch className="text-black bg-white rounded-full w-8 h-8 p-2" size={20} />
           <MdOutlineWbSunny className="text-black bg-white rounded-full w-8 h-8 p-2" size={20} />
           <FaRegBell className="text-black bg-white rounded-full w-8 h-8 p-2" size={20} />
-          <div className="flex items-center w-[50%] px-2 h-[70%] rounded-full bg-white ">
-            <HiOutlineUserCircle className="text-black" size={24} />
+          <div className="flex items-center w-[50%] px-2 gap-2 h-[70%] rounded-full bg-white ">
+            {/* <HiOutlineUserCircle className="text-black" size={24} /> */}
+            <img src={maleProfile} className="rounded-full w-6 h-6 object-cover "/ >
             <div className="flex flex-col">
               <p className="text-black text-[10px] font-bold">Eric Simatupang</p>
               <p className="text-gray-500 text-[10px]">Site Manager</p>
