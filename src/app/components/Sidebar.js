@@ -16,7 +16,7 @@ import {
   
 export const Sidebar = () => {
     return (
-      <div className="flex flex-col bg-gray-50 w-60 h-max ml-4 rounded-3xl p-4">
+      <div className="flex flex-col bg-gray-50 w-60 h-full ml-4 rounded-3xl p-4">
         <div className='flex text-[15px] w-full py-2 justify-between px-2 text-white font-bold rounded-full mb-2 bg-[#171717] items-center'><span>Menu</span> <HiMiniSquares2X2 />
         </div>
         <span className='font-bold mb-2 px-2 text-[12px]'>Fish Pond Analyst</span>
