@@ -49,7 +49,7 @@ export const Navbar = () => {
           <FaRegBell className="text-black bg-white rounded-full w-8 h-8 p-2" size={20} />
           <div className="flex items-center w-[50%] px-2 gap-2 h-[70%] rounded-full bg-white ">
             {/* <HiOutlineUserCircle className="text-black" size={24} /> */}
-            <img src={maleProfile} className="rounded-full w-6 h-6 object-cover "/ >
+            <image src={maleProfile} className="rounded-full w-6 h-6 object-cover "/ >
             <div className="flex flex-col">
               <p className="text-black text-[10px] font-bold">Eric Simatupang</p>
               <p className="text-gray-500 text-[10px]">Site Manager</p>
