@@ -56,8 +56,8 @@ const FishFarmUpdate = () => {
   return (
     <div className="bg-[#0a0a0a] backdrop-blur-md rounded-lg flex justify-between flex-col p-4 h-full shadow-md w-full max-w-lg mx-auto">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-[12px] font-semibold text-gray-300">Fish Farm Update</h2>
-        <div className="flex text-[10px] gap-2 text-gray-400">
+        <h2 className="text-[18px] font-semibold text-gray-300">Fish Farm Update</h2>
+        <div className="flex text-[12px] gap-2 text-gray-400">
           <span className='bg-[#2e2e2e] py-[2px] px-2 rounded-full'>Farm - 8462A1</span>
           <span className='bg-[#2e2e2e] py-[2px] px-2 rounded-full'>Monthly</span>
         </div>
