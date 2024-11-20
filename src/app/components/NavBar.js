@@ -8,7 +8,7 @@ import { GiFishingNet } from "react-icons/gi";
 
 export const Navbar = () => {
   return (
-    <div className="h-[60px] flex w-full ">
+    <div className="h-[10%] flex w-full ">
       <div className="flex items-center px-4  justify-between w-full h-full ">
         <div className="flex items-center w-[70%] gap-3 justify-between h-full">
           <div className="flex items-center text-black font-bold text-lg">

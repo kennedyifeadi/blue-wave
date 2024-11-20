@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="w-[100dvw] h-[100dvh] flex flex-col">
         <Navbar/>
-        <div className=" flex w-full h-[87%]">
+        <div className=" flex px-4 w-full justify-between h-[90%] border border-black">
          <Sidebar/>
           <div className="flex flex-col w-[45%] h-[50%] ml-4">
             <div className="flex flex-wrap w-[100%] h-[50%] gap-4">
