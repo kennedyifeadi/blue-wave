@@ -28,7 +28,7 @@ export default function Home() {
 
           </div>
         </div>
-        <div className="w-[90dvw] mt-[20px] md:mb-0 md:mt-0 md:w-[28%] h-[100%] flex items-center justify-between flex-col">
+        <div className="w-[100%] mt-[20px] md:mb-0 md:mt-0 md:w-[28%] h-[100%] flex items-center justify-between flex-col">
           <AiInference />
           <FishFarmUpdate />
         </div>

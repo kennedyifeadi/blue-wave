@@ -144,7 +144,7 @@ export const FishFarmUpdate = () => {
   return (
     <div className="bg-[#0a0a0a] backdrop-blur-md rounded-lg flex justify-between flex-col p-4 h-[48%] shadow-md w-full max-w-lg mx-auto">
       <div className="flex justify-between w-full items-center z-10">
-        <h1 className="text-[24px] font-bold text-white">
+        <h1 className="text-[18px] md:text-[24px] font-bold text-white">
         Fish Farm Update
         </h1>
         <div className="relative w-[100px] " >

@@ -9,17 +9,17 @@ import maleProfile from "../images/male profile 2.jpg"
 export const Navbar = () => {
   return (
     <div className="h-[10%] flex w-full ">
-      <div className="flex items-center md:px-4 px-2  justify-between w-full h-full ">
-        <div className="flex items-center w-[70%] gap-3 justify-between h-full">
-          <div className="flex items-center text-black font-bold text-lg">
+      <div className="flex items-center md:px-4 px-2 justify-between w-full h-full ">
+        <div className="flex items-center w-[80%] gap-3 justify-between h-full">
+          <div className="flex items-center w-[20%] text-black font-bold text-lg">
             <div className="rounded-full bg-blue-200 p-2 text-white">
               <MdOutlineAnalytics size={24} />
             </div>
-            <span className="ml-2 text-[15px] md:text-[24px]">BlueWave</span>
+            <span className="ml-2 text-[15px] md:text-[24px]"><span className="hidden md:flex">BlueWave</span><span className="md:hidden">BW</span></span>
           </div>
 
           {/* Navigation Links */}
-          <div className="flex bg-[#0a0a0a] w-[100%] items-center justify-between p-1 h-[70%] pr-3 rounded-full">
+          <div className="flex bg-[#0a0a0a] w-[70%] md:w-[80%] items-center justify-between p-1 h-[70%] pr-3 rounded-full">
             <button className="text-black bg-[#e0f265] w-max p-2 md:p-0 md:w-[18%] text-[12px] h-full justify-center rounded-full font-semibold flex items-center">
               <MdOutlineAnalytics className="mr-1" />
               <span className="hidden md:flex">Analysis</span>

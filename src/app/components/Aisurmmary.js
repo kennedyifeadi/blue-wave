@@ -26,7 +26,7 @@ export const AiInference = () => {
   const fetchData = async () => {
     try {
       const model = genAI.getGenerativeModel({ model: "gemini-pro" });
-      const prompt = `Analyze the following water health data for the past week, consisting of turbidity, temperature (°C), TDS (%), ammonia(NH3), PH. Provide a brief, actionable summary of the trends and their impact on soil health based on the data: ${labelOne} ${dataOne} ${labelTwo} ${dataTwo} ${labelThree} ${dataThree} ${labelfour} ${datafour} ${labelfive} ${datafive}, Give a short summary (3-4 sentences) highlighting the overall soil health and recommendations for irrigation or soil care. dont bold the title or text`
+      const prompt = `Analyze the following fish pond water health data for the past week, consisting of turbidity, temperature (°C), TDS (%), ammonia(NH3), PH. Provide a brief, actionable summary of the trends and their impact on the health of the fishes based on the data: ${labelOne} ${dataOne} ${labelTwo} ${dataTwo} ${labelThree} ${dataThree} ${labelfour} ${datafour} ${labelfive} ${datafive}, Give a short summary (3-4 sentences) highlighting the overall water health and recommendations for better fish rearing. don't bold the title or text`
       const result = await model.generateContent(prompt);
       await sleep(1000);
       setIsLoading(false)

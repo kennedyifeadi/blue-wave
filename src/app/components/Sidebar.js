@@ -1,3 +1,4 @@
+"use client"
 import {
     FiBarChart,
     FiFileText,
@@ -11,50 +12,58 @@ import {
   import { HiMiniSquares2X2 } from "react-icons/hi2";
   import { RiTeamFill } from "react-icons/ri";
   import { IoMenu } from "react-icons/io5";
+import { useState } from 'react';
 
 
 
   
 export const Sidebar = () => {
+  const [clicked, setClicked] = useState(false);
+
+  const toggleClick = () => {
+    setClicked(!clicked)
+    console.log(clicked)
+  }
+
     return (
-      <div className='w-max h-max md:relative absolute  right-3 top-[5px]'>
-      <div className="md:flex hidden flex-col bg-gray-50 w-60 h-full rounded-lg p-4">
-        <div className='flex text-[15px] w-full py-2 justify-between px-2 text-white font-bold rounded-full mb-2 bg-[#171717] items-center'><span>Menu</span> <HiMiniSquares2X2 />
+      <div className='w-max h-max md:relative absolute md:h-full right-[15px] top-[5px] md:pl-4'>
+      <div className={`flex md:relative absolute top-[-4px] md:top-[-2px] md:translate-x-0 flex-col bg-gray-50 md:w-64 w-72 md:h-full h-[100dvh] duration-300 ease-in-out gap-3 md:gap-0 md:rounded-lg rounded-tr-none rounded-br-none  p-4 ${clicked ? "translate-x-[-230px]" : "translate-x-[200px]"}`}>
+        <div className='flex text-[15px] w-full py-2 justify-between px-3 text-white font-bold rounded-full mb-2 bg-[#171717] items-center'><span>Menu</span> <HiMiniSquares2X2 />
         </div>
-        <span className='font-bold mb-2 px-2 text-[12px]'>Fish Pond Analyst</span>
+        <span className='font-bold mb-1 px-2 text-[12px]'>Fish Pond Analyst</span>
         <ul className="flex flex-wrap gap-3 w-full justify-between ">
           {/* Predictive Weather */}
-          <li className="flex flex-col text-[15px]  items-center justify-center w-[47%] h-[70px] border bg-[#dbdbdb33] rounded-md">
+          <li className="flex flex-col text-[15px]  items-center justify-center w-[47%] h-[80px] md:h-[70px] border bg-[#dbdbdb33] rounded-md">
             <FiBarChart className="text-black" />
             <span className='text-[11px] px-1 mt-1 flex items-center text-center w-full justify-center font-semibold text-[#000000d5]'>Predictive Weather</span>
           </li>
   
           {/* Pond Reports Analyst */}
-          <li className="flex flex-col items-center justify-center w-[47%] h-[60px] border bg-[#dbdbdb33] rounded-md">
+          <li className="flex flex-col items-center justify-center w-[47%] h-[80px] md:h-[70px] border bg-[#dbdbdb33] rounded-md">
             <IoWatch className="text-black" />
             <span className='text-[11px] px-1 mt-1 flex items-center text-center w-full justify-center font-semibold text-[#000000d5]'>Pond Reports Analyst</span>
           </li>
   
           {/* Device Connected */}
-          <li className="flex flex-col text-[15px] justify-center items-center w-[47%] h-[70px] border bg-[#dbdbdb33] rounded-md">
+          <li className="flex flex-col text-[15px] justify-center items-center w-[47%] h-[80px] md:h-[70px] border bg-[#dbdbdb33] rounded-md">
             <BiDevices className="text-black" />
             <span className='text-[11px] px-1 mt-1 flex items-center text-center w-full justify-center font-semibold text-[#000000d5]'>Device Connected</span>
           </li>
   
           {/* Fish Growth Analyst */}
-          <li className="flex flex-col text-[15px] justify-center items-center w-[47%] h-[70px] border bg-[#dbdbdb33] rounded-md">
+          <li className="flex flex-col text-[15px] justify-center items-center w-[47%] h-[80px] md:h-[70px] border bg-[#dbdbdb33] rounded-md">
             <FiDatabase className="text-black" />
             <span className='text-[11px] px-1 mt-1 flex items-center text-center w-full justify-center font-semibold text-[#000000d5]'>Fish Growth Analyst</span>
           </li>
   
           {/* Customize Water Flow */}
-          <li className="flex flex-col text-[15px] justify-center items-center w-[47%] h-[70px] border bg-[#dbdbdb33] rounded-md">
+          <li className="flex flex-col text-[15px] justify-center items-center w-[47%] h-[80px] md:h-[70px] border bg-[#dbdbdb33] rounded-md">
             <FiSliders className="text-black" />
             <span className='text-[11px] px-1 mt-1 flex items-center text-center w-full justify-center font-semibold text-[#000000d5]'>Customize Water Flow</span>
           </li>
   
           {/* Automated Nutrient */}
-          <li className="flex flex-col text-[15px] justify-center items-center w-[47%] h-[70px] border bg-[#dbdbdb33] rounded-md">
+          <li className="flex flex-col text-[15px] justify-center items-center w-[47%] h-[80px] md:h-[70px] border bg-[#dbdbdb33] rounded-md">
             <FiTool className="text-black" />
             <span className='text-[11px] px-1 mt-1 flex items-center text-center w-full justify-center font-semibold text-[#000000d5]'>Automated Nutrient</span>
           </li>
@@ -85,7 +94,7 @@ export const Sidebar = () => {
           </button>
         </div>
       </div>
-      <div className='flex md:hidden text-[24px] rounded-full bg-[#0a0a0a] text-white p-2 '>
+      <div className={`flex md:hidden text-[24px] rounded-full bg-[#0a0a0a] text-white p-2  `} onClick={toggleClick}>
       <IoMenu />
       </div>
       </div>
