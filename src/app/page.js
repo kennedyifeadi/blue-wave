@@ -14,7 +14,7 @@ import { FishFarmUpdate } from "./components/fishFarmUpdate";
 
 export default function Home() {
   return (
-    <div className="w-[100%] md:h-[100dvh] mb-3 md:mb-0 h-max flex flex-col py-2 relative">
+    <div className="w-[100%] md:h-[100dvh] overflow-x-hidden mb-3 md:mb-0 h-max flex flex-col py-2 relative">
       <Navbar />
       <div className=" flex md:flex-row flex-col px-4 py-2 w-full justify-between h-[100dvh] md:h-[90%]">
         <Sidebar />
