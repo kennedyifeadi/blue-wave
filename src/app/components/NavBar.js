@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 export const Navbar = () => {
   return (
-    <div className="h-[10%] flex w-full ">
+    <div className="h-[10%] flex w-full py-1 md:py-0">
       <div className="flex items-center md:px-4 px-2 justify-between w-full h-full ">
         <div className="flex items-center w-[80%] gap-3 justify-between h-full">
           <div className="flex items-center w-[20%] text-black font-bold text-lg">
@@ -54,7 +54,7 @@ export const Navbar = () => {
           <FaRegBell className="text-black bg-white rounded-full w-8 h-8 p-2" size={20} />
           <div className="flex items-center w-[50%] px-2 gap-2 h-[70%] rounded-full bg-white ">
             {/* <HiOutlineUserCircle className="text-black" size={24} /> */}
-            <image src={maleProfile} className="rounded-full w-6 h-6 object-cover "/ >
+            {/* <image src={maleProfile} className="rounded-full w-6 h-6 object-cover "/ > */}
             <div className="flex flex-col">
               <p className="text-black text-[10px] font-bold">Eric Simatupang</p>
               <p className="text-gray-500 text-[10px]">Site Manager</p>

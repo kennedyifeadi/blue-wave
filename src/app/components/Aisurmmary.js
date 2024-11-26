@@ -7,7 +7,7 @@ import { lineChartData } from '../data/waterData';
 export const AiInference = () => {
   const [response, setResponse] = useState("");
   const [isLoading, setIsLoading] = useState(true);
-  const API_KEY = "AIzaSyDVlfPlzubkQw9orWkmunaTQ2Ku2FQG4Ug"
+  const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
   const genAI = new GoogleGenerativeAI(API_KEY)
 
   const dataOne = [...lineChartData.datasets[0].data];
