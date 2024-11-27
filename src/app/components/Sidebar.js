@@ -40,7 +40,7 @@ export const Sidebar = () => {
   }, [clicked]);
 
   return (
-    <div className="w-max h-max md:relative absolute md:h-full right-[15px] top-[-30px] md:top-0 z-40 md:pl-4">
+    <div className="w-max h-max md:relative absolute md:h-full right-[15px] top-[-30px] md:top-0 md:pl-4">
       <div
         ref={sidebarRef}
         className={`flex md:relative fixed z-20 top-[-2px] md:top-[-2px] md:translate-x-0 flex-col bg-gray-50 md:w-64 w-72 md:h-full h-[100dvh] duration-500 ease-in-out gap-3 md:gap-0 md:rounded-lg rounded-tr-none rounded-br-none p-4 ${
@@ -118,7 +118,7 @@ export const Sidebar = () => {
         </div>
       </div>
       <div
-        className={`flex md:hidden text-[24px] rounded-full bg-[#0a0a0a] text-white p-2`}
+        className={`flex md:hidden text-[24px] rounded-full bg-[#0a0a0a] fixed right-3 top-1 text-white p-2`}
         onClick={toggleClick}
       >
         <IoMenu />
