@@ -43,8 +43,8 @@ export const Sidebar = () => {
     <div className="w-max h-max md:relative absolute md:h-full right-[15px] top-[-30px] md:top-0 md:pl-4">
       <div
         ref={sidebarRef}
-        className={`flex md:relative fixed z-20 top-[-2px] md:top-[-2px] md:translate-x-0 flex-col bg-gray-50 md:w-64 w-72 md:h-full h-[100dvh] duration-500 ease-in-out gap-3 md:gap-0 md:rounded-lg rounded-tr-none rounded-br-none p-4 ${
-          clicked ? "translate-x-[-230px]" : "translate-x-[200px]"
+        className={`flex md:relative fixed z-20 top-[0px] md:top-[-2px] md:translate-x-0 flex-col bg-gray-50 md:w-64 w-72 md:h-full h-[100dvh] duration-500 ease-in-out gap-3 md:gap-0 md:rounded-lg rounded-tr-none rounded-br-none p-4 ${
+          clicked ? "translate-x-[-268px]" : "translate-x-[200px]"
         }`}
       >
         <div className="flex text-[15px] w-full py-2 justify-between px-3 text-white font-bold rounded-full mb-2 bg-[#171717] items-center">
