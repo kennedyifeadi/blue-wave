@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaRegBell, FaCog } from "react-icons/fa";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { MdOutlineAnalytics, MdOutlineTableChart, MdOutlineDashboard } from "react-icons/md";
@@ -54,7 +55,7 @@ export const Navbar = () => {
           <FaRegBell className="text-black bg-white rounded-full w-8 h-8 p-2" size={20} />
           <div className="flex items-center w-[50%] px-2 gap-2 h-[70%] rounded-full bg-white ">
             {/* <HiOutlineUserCircle className="text-black" size={24} /> */}
-            {/* <image src={maleProfile} className="rounded-full w-6 h-6 object-cover "/ > */}
+            <Image src={maleProfile} className="rounded-full w-8 h-8 object-cover " alt="Profile image"/>
             <div className="flex flex-col">
               <p className="text-black text-[10px] font-bold">Eric Simatupang</p>
               <p className="text-gray-500 text-[10px]">Site Manager</p>
