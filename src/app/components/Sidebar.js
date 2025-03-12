@@ -50,27 +50,27 @@ export const Sidebar = () => {
         <div className="flex text-[15px] w-full py-2 justify-between px-3 text-white font-bold rounded-full mb-2 bg-[#171717] items-center">
           <span>Menu</span> <HiMiniSquares2X2 />
         </div>
-        <span className="font-bold mb-1 px-2 text-[12px]">Fish Pond Analyst</span>
+        <span className="font-bold mb-1 px-2 text-[12px]">Fish Pond Controls</span>
         <ul className="flex flex-wrap gap-3 w-full justify-between ">
           {/* Predictive Weather */}
-          <li className="flex flex-col text-[15px] items-center justify-center w-[47%] h-[80px] md:h-[70px] border bg-[#dbdbdb33] rounded-md">
+          <li className="active:scale-75 duration-300 ease-in-out cursor-pointer flex flex-col text-[15px] items-center justify-center w-[47%] h-[80px] md:h-[70px] border bg-[#dbdbdb33] rounded-md">
             <FiBarChart className="text-black" />
             <span className="text-[11px] px-1 mt-1 flex items-center text-center w-full justify-center font-semibold text-[#000000d5]">
-              Predictive Weather
+              Manual Override
             </span>
           </li>
           {/* Pond Reports Analyst */}
-          <li className="flex flex-col items-center justify-center w-[47%] h-[80px] md:h-[70px] border bg-[#dbdbdb33] rounded-md">
+          <li className="active:scale-75 duration-300 ease-in-out cursor-pointer flex flex-col items-center justify-center w-[47%] h-[80px] md:h-[70px] border bg-[#dbdbdb33] rounded-md">
             <IoWatch className="text-black" />
             <span className="text-[11px] px-1 mt-1 flex items-center text-center w-full justify-center font-semibold text-[#000000d5]">
-              Pond Reports Analyst
+              Water Pump
             </span>
           </li>
           {/* Device Connected */}
-          <li className="flex flex-col text-[15px] justify-center items-center w-[47%] h-[80px] md:h-[70px] border bg-[#dbdbdb33] rounded-md">
+          <li className="active:scale-75 duration-300 ease-in-out cursor-pointer flex flex-col text-[15px] justify-center items-center w-[47%] h-[80px] md:h-[70px] border bg-[#dbdbdb33] rounded-md">
             <BiDevices className="text-black" />
             <span className="text-[11px] px-1 mt-1 flex items-center text-center w-full justify-center font-semibold text-[#000000d5]">
-              Device Connected
+              Salt Pump
             </span>
           </li>
           {/* Fish Growth Analyst */}
